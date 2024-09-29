@@ -39,14 +39,17 @@ const msg = document.getElementById("msg")
 // })
 
 document.getElementById("showButton").onclick = function () {
-    var hiddenContent = document.getElementById("hiddenContent");
+    var hiddenVAPT = document.getElementById("hiddenVAPT");
+    var hiddenPrivilege = document.getElementById("hiddenPrivilege");
     var showButton = document.getElementById("showButton");
 
-    if (hiddenContent.style.display === "none" || hiddenContent.style.display === "") {
-        hiddenContent.style.display = "block";
+    if (hiddenVAPT.style.display === "none" || hiddenVAPT.style.display === "") {
+        hiddenVAPT.style.display = "block";
+        hiddenPrivilege.style.display = "block";
         showButton.textContent = "See Less";
     } else {
-        hiddenContent.style.display = "none";
+        hiddenVAPT.style.display = "none";
+        hiddenPrivilege.style.display = "none";
         showButton.textContent = "See More";
     }
 };
