@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         // Make API call
-        fetch('https://connector.guardianservices.in/email-connector/send-portfolio-message', {
+        fetch('https://connector.guardianservices.in/email-connector/send-portfolio-message', { 
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
